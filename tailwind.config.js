@@ -4,7 +4,12 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'Mulish': ['"Mulish"', 'sans-serif']
+        // font-family: 'Mulish', sans-serif;
+      }
+    },
   },
   plugins: [],
 }
