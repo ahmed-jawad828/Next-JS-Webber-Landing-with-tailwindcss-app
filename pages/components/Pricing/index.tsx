@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer';
 import Header from '../Header'
 
 const Pricing = ({ open, setOpen }: { open: any, setOpen: any }) => {
@@ -42,11 +43,43 @@ const Pricing = ({ open, setOpen }: { open: any, setOpen: any }) => {
       satisfactionGuaranteed: true,
     },
   ];
+  const Faqs = [
+    {
+      title: 'How do I use the webber for 3+ members?',
+      content:'Magnam reprehenderit quisquam corporis sunt ratione. Non magnam et. Suscipit quia et aspernatur officiis quo. Officia sed eaque enim doloribus quisquam mollitia nihil.'
+
+    },
+    {
+      title: 'What does early access mean',
+      content:'Magnam reprehenderit quisquam corporis sunt ratione. Non magnam et. Suscipit quia et aspernatur officiis quo. Officia sed eaque enim doloribus quisquam mollitia nihil.'
+
+    },
+    {
+      title: 'Whats the best way to make the most out of it?',
+      content:'Magnam reprehenderit quisquam corporis sunt ratione. Non magnam et. Suscipit quia et aspernatur officiis quo. Officia sed eaque enim doloribus quisquam mollitia nihil.'
+
+    },
+    {
+      title: 'How are enterprise package customers accomodated?',
+      content:'Magnam reprehenderit quisquam corporis sunt ratione. Non magnam et. Suscipit quia et aspernatur officiis quo. Officia sed eaque enim doloribus quisquam mollitia nihil.'
+
+    },
+    {
+      title: 'How do I use the webber for 3+ members',
+      content:'Magnam reprehenderit quisquam corporis sunt ratione. Non magnam et. Suscipit quia et aspernatur officiis quo. Officia sed eaque enim doloribus quisquam mollitia nihil.'
+
+    },
+    {
+      title: 'How do I use the webber for 3+ members',
+      content:'Magnam reprehenderit quisquam corporis sunt ratione. Non magnam et. Suscipit quia et aspernatur officiis quo. Officia sed eaque enim doloribus quisquam mollitia nihil.'
+
+    },
+  ];
   return (
-    <div className='flex flex-col justify-center '
+    <div className='flex flex-col justify-center tracking-tighter bg-gradient-to-b from-cyan-200 to-transparent'
     // style={{ width: "100vw" }}
     >
-      <div className="bg-gradient-to-b from-cyan-200 to-transparent max-h-screen">
+      <div className=" max-h-screen">
         <Header open={open} setOpen={setOpen} />
         <div className=' flex flex-col items-center justify-center mt-20'>
           <div className='tracking-tighter text-8xl font-extrabold w-4/6 text-center text-gray-800'>
@@ -59,9 +92,9 @@ const Pricing = ({ open, setOpen }: { open: any, setOpen: any }) => {
           </div>
         </div>
       </div>
-      <div className='flex justify-center my-20'>
-        <div className='grid grid-cols-5 w-9/12'>
-          <div className='col-span-2'>
+      <div className='flex justify-center my-20 '>
+        <div className='grid grid-cols-5 w-11/12 '>
+          <div className='col-span-2 pb-10 pt-16 '>
             <div className='flex flex-col gap-y-7 justify-center items-center'>
               <div className='invisible'>del- All limited links</div>
               <div className='invisible'>del- All limited links</div>
@@ -78,7 +111,7 @@ const Pricing = ({ open, setOpen }: { open: any, setOpen: any }) => {
               <div className='invisible'>del - Satisfaction guaranteed</div>
             </div>
           </div>
-          <div className='col-span-1 '>
+          <div className='col-span-1 py-10  '>
             <div className='flex flex-col gap-y-7 justify-center items-center'>
               <div className='text-3xl font-extrabold text-gray-600'>Starter</div>
               <div className='flex items-end'>
@@ -131,12 +164,12 @@ const Pricing = ({ open, setOpen }: { open: any, setOpen: any }) => {
                 </div>
               </div>
               <div>
-                <button className="w-24 py-3 bg-cyan-100  hover:opacity-75 text-cyan-700 text-xs font-semibold rounded-sm">Choose Plan</button>
+                <button className="px-7 py-3 bg-cyan-100  hover:opacity-75 text-cyan-700 text-base font-semibold rounded-sm">Choose Plan</button>
                 
               </div>
             </div>
           </div>
-          <div className='col-span-1'>
+          <div className='col-span-1  py-10  bg-white drop-shadow-2xl '>
             <div className='flex flex-col gap-y-7  justify-center items-center'>
               <div className='text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-cyan-700 via-sky-600'>Pro</div>
               <div className='flex  items-end'>
@@ -190,11 +223,11 @@ const Pricing = ({ open, setOpen }: { open: any, setOpen: any }) => {
                 </div>
               </div>
               <div>
-                <button className="w-24 py-3 mt-1 bg-gradient-to-r from-cyan-500 to-cyan-700 via-sky-600 hover:opacity-75 text-gray-50 text-xs font-semibold rounded-sm">Choose Plan</button>
+                <button className="px-7 py-3 mt-1 bg-gradient-to-r from-cyan-500 to-cyan-700 via-sky-600 hover:opacity-75 text-gray-50 text-base font-semibold rounded-sm">Choose Plan</button>
               </div>
             </div>
           </div>
-          <div className='col-span-1'>
+          <div className='col-span-1 py-10  '>
             <div className='flex flex-col gap-y-7  justify-center items-center'>
               <div className='text-3xl font-extrabold text-gray-600'>Enterprise</div>
               <div className='flex items-end'>
@@ -250,12 +283,48 @@ const Pricing = ({ open, setOpen }: { open: any, setOpen: any }) => {
                 </div>
               </div>
               <div className=''>
-              <button className="w-24 py-3 bg-cyan-100  hover:opacity-75 text-cyan-700 text-xs font-semibold rounded-sm">Choose Plan</button>
+              <button className="px-7 py-3 bg-cyan-100  hover:opacity-75 text-cyan-700 text-base font-semibold rounded-sm">Choose Plan</button>
               </div>
             </div>
           </div>
 
         </div>
+      </div>
+      <div className='bg-gray-100 py-20 '>
+        <div className="flex flex-col justify-center items-center ">
+          <div className='leading-tight text-6xl font-extrabold text-gray-800'>
+            Frequently asked questions
+          </div>
+          <div className='grid grid-cols-2 w-11/12 pt-20'>
+          {Faqs.map((item, index) => (
+           <div key={index} className='flex flex-col mx-20  my-4'>
+             <div className='text-2xl font-semibold text-gray-800'>
+
+             {item.title}
+             </div>
+             <div className='text-lg font-normal text-gray-600 text-justify'>
+               {item.content}
+             </div>
+           </div>     
+          ))}
+
+          </div>
+         
+        </div>
+      </div>
+      <div className='bg-gradient-to-r from-cyan-500 to-cyan-700 via-sky-600 py-20'>
+        <div  className='flex flex-col justify-center items-center gap-y-6'>
+          <div className='text-5xl text-white font-semibold'>Get results, no matter what</div>
+          <div className='font-medium text-base text-white'>Start your free trial today, you get all the pro features for 1 month for you and your team. If you think its not for you can easily unsubscribe</div>
+          <div>
+            <button className='text-cyan-600 bg-white hover:opacity-70 transition duration-300 hover:text-sky-600 px-10 py-2 rounded'>Start  free trial</button>
+          </div>
+
+
+        </div>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   )

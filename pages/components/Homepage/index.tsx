@@ -9,7 +9,7 @@ const Homepage = ({open,setOpen}:{open:any,setOpen:any}) => {
       <div className="bg-gradient-to-b from-cyan-200 to-transparent max-h-screen">
         <Header open={open} setOpen={setOpen}/>
         <div className=' flex flex-col items-center justify-center mt-20'>
-          <div className='tracking-tighter text-8xl font-extrabold w-3/6 text-center text-gray-800'>
+          <div className='tracking-tighter lg:text-8xl text-2xl font-extrabold w-3/6 text-center text-gray-800'>
             DEPLOY YOUR FRONT-END
           </div>
           <div className='flex gap-x-6 mt-20'>

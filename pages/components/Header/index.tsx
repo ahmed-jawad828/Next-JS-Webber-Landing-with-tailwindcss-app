@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const Header = ({open,setOpen}:{open:any,setOpen:any}) => {
+const Header = ({ open, setOpen }: { open: any, setOpen: any }) => {
+  const [show, setshow] = useState(false);
   return (
     <>
+      
       {/* <div className="max-w-full flex justify-between items-center bg-red-300 w-screen px-10 pt-10">
 
         <div>
@@ -32,7 +34,7 @@ const Header = ({open,setOpen}:{open:any,setOpen:any}) => {
 
       </div> */}
       <nav className="flex items-center justify-between    lg:px-12 py-4   ">
-      <div>
+        <div>
           <button className=' '>
             <div className='flex justify-center '>
 
@@ -50,11 +52,11 @@ const Header = ({open,setOpen}:{open:any,setOpen:any}) => {
             <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
           </button>
         </div>
-        <div className="w-full flex flex-grow gap-x-6  flex-col lg:flex-row lg:items-center lg:w-auto  justify-center"> 
-          <button className={open==='Homepage' ? 'font-normal border-b border-black text-zinc-900 hover:opacity-75':"font-normal hover:opacity-75 text-zinc-900"} onClick={()=>setOpen("Homepage")}>Overview</button>
-          <button className={open==='Pricing' ? 'font-normal hover:opacity-75 border-b border-black text-zinc-900':"font-normal hover:opacity-75 text-zinc-900"} onClick={()=>setOpen("Pricing")}>Pricing</button>
-          <button className={open==='CaseStudies' ? 'font-normal hover:opacity-75 border-b border-black text-zinc-900':"font-normal hover:opacity-75 text-zinc-900"} onClick={()=>setOpen("CaseStudies")}>Case Studies</button>
-          <button className="">FAQ</button>  
+        <div className="w-full flex flex-grow gap-x-6  flex-col lg:flex-row lg:items-center lg:w-auto  justify-center">
+          <button className={open === 'Homepage' ? 'font-normal border-b border-black text-zinc-900 hover:opacity-75' : "font-normal hover:opacity-75 text-zinc-900"} onClick={() => setOpen("Homepage")}>Overview</button>
+          <button className={open === 'Pricing' ? 'font-normal hover:opacity-75 border-b border-black text-zinc-900' : "font-normal hover:opacity-75 text-zinc-900"} onClick={() => setOpen("Pricing")}>Pricing</button>
+          <button className={open === 'CaseStudies' ? 'font-normal hover:opacity-75 border-b border-black text-zinc-900' : "font-normal hover:opacity-75 text-zinc-900"} onClick={() => setOpen("CaseStudies")}>Case Studies</button>
+          <button className="">FAQ</button>
         </div>
         <div className=' lg:pl-0 pl-16' >
           <button className=' bg-cyan-100 px-5 hover:text-cyan-100  hover:bg-cyan-700 transition duration-500 py-2 rounded-md text-cyan-700'>
