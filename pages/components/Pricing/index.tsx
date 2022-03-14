@@ -317,7 +317,7 @@ const Pricing = ({ open, setOpen }: { open: any, setOpen: any }) => {
           <div className='text-5xl text-white font-semibold'>Get results, no matter what</div>
           <div className='font-medium text-base text-white'>Start your free trial today, you get all the pro features for 1 month for you and your team. If you think its not for you can easily unsubscribe</div>
           <div>
-            <button className='text-cyan-600 bg-white hover:opacity-70 transition duration-300 hover:text-sky-600 px-10 py-2 rounded'>Start  free trial</button>
+            <button className='text-cyan-600 bg-white hover:text-white transition duration-500 hover:bg-cyan-700 transform hover:scale-105 px-10 py-2 rounded'>Start free trial</button>
           </div>
 
 

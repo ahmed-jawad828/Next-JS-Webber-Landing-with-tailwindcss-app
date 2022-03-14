@@ -28,10 +28,10 @@ const Home: NextPage = () => {
           <Pricing open={open} setOpen={setOpen}/>
         </div>
         <div className={open==='CaseStudies'?'':'hidden'}>          
-          <CaseStudies open={open} setOpen={setOpen}/>
+          <CaseStudies open={open} setOpen={setOpen} setCaseStudy={setCaseStudy}/>
         </div>                
-        <div className={open==='CaseStudiesDetai;'?'':'hidden'}>          
-          <CaseStudiesDetail />
+        <div className={open==='CaseStudiesDetail'?'':'hidden'}>          
+          <CaseStudiesDetail open={open} setOpen={setOpen} caseStudy={caseStudy} />
         </div>                
       </section>
 

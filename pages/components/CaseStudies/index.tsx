@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Header from '../Header'
 
-const CaseStudies = ({ open, setOpen }: { open: any, setOpen: any }) => {
+const CaseStudies = ({ open, setOpen,setCaseStudy }: { open: any, setOpen: any , setCaseStudy:any}) => {
   
   return (
     <div className='flex flex-col justify-center ' style={{ width: "100vw" }}>
@@ -69,7 +69,7 @@ const CaseStudies = ({ open, setOpen }: { open: any, setOpen: any }) => {
               <p className='text-gray-600 font-normal text-base  text-justify '>Learn how Adobe has leveraged Webber to consolidate it’s diverse range of services software</p>
             </div>
             <div>
-              <button className='flex items-center text-cyan-700 hover:text-red-500 justify-center'>
+              <button className='flex items-center text-cyan-700 hover:text-red-500 justify-center' onClick={()=> setCaseStudy(1)}>
                 <p>Read story</p>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 pt-1" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -93,7 +93,7 @@ const CaseStudies = ({ open, setOpen }: { open: any, setOpen: any }) => {
               <p className='text-gray-600 font-normal text-base'>Learn how Adobe has leveraged Webber to consolidate it's diverse range of services software</p>
             </div>
             <div>
-              <button className='flex items-center text-cyan-700 hover:text-red-500 justify-center'>
+              <button className='flex items-center text-cyan-700 hover:text-red-500 justify-center' onClick={()=> setCaseStudy(2)}>
                 <p>Read story</p>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 pt-1" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -117,7 +117,7 @@ const CaseStudies = ({ open, setOpen }: { open: any, setOpen: any }) => {
               <p className='text-gray-600 font-normal text-base'>Learn how Adobe has leveraged Webber to consolidate it's diverse range of services software</p>
             </div>
             <div>
-              <button className='flex items-center text-cyan-700 hover:text-red-500 justify-center'>
+              <button className='flex items-center text-cyan-700 hover:text-red-500 justify-center' onClick={()=> setCaseStudy(3)}>
                 <p>Read story</p>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 pt-1" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -141,7 +141,7 @@ const CaseStudies = ({ open, setOpen }: { open: any, setOpen: any }) => {
               <p className='text-gray-600 font-normal text-base'>Learn how Adobe has leveraged Webber to consolidate it’s diverse range of services software</p>
             </div>
             <div>
-              <button className='flex items-center text-cyan-700 hover:text-red-500 justify-center'>
+              <button className='flex items-center text-cyan-700 hover:text-red-500 justify-center' onClick={()=> setCaseStudy(4)}>
                 <p>Read story</p>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 pt-1" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -165,7 +165,7 @@ const CaseStudies = ({ open, setOpen }: { open: any, setOpen: any }) => {
               <p className='text-gray-600 font-normal text-base'>Learn how Adobe has leveraged Webber to consolidate it’s diverse range of services software</p>
             </div>
             <div>
-              <button className='flex items-center text-cyan-700 hover:text-red-500 justify-center'>
+              <button className='flex items-center text-cyan-700 hover:text-red-500 justify-center' onClick={()=> setCaseStudy(5)}>
                 <p>Read story</p>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 pt-1" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -189,7 +189,7 @@ const CaseStudies = ({ open, setOpen }: { open: any, setOpen: any }) => {
               <p className='text-gray-600 font-normal text-base'>Learn how Adobe has leveraged Webber to consolidate it's diverse range of services software</p>
             </div>
             <div>
-              <button className='flex items-center text-cyan-700 hover:text-red-500 justify-center'>
+              <button className='flex items-center text-cyan-700 hover:text-red-500 justify-center' onClick={()=> setCaseStudy(6)}>
                 <p>Read story</p>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 pt-1" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
